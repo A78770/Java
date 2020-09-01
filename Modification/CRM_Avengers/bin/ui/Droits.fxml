@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="150.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.DroitsController">
+   <children>
+      <Label layoutX="30.0" layoutY="14.0" text="Utilisateur">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="14.0" text="Droits">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo_uti" layoutX="30.0" layoutY="41.0" onAction="#handleuti" prefWidth="150.0" />
+      <ComboBox fx:id="combo_droits" layoutX="423.0" layoutY="41.0" prefWidth="150.0" />
+      <Button fx:id="btn_val" layoutX="53.0" layoutY="111.0" mnemonicParsing="false" onAction="#handlebtnvaldrt" text="Valider" />
+      <Button fx:id="btn_ann" layoutX="461.0" layoutY="111.0" mnemonicParsing="false" onAction="#handlebtnann" text="Annuler" />
+      <Button fx:id="supprdrt" layoutX="247.0" layoutY="111.0" mnemonicParsing="false" onAction="#handlesupp" text="Supprimer droits" />
+   </children>
+</AnchorPane>

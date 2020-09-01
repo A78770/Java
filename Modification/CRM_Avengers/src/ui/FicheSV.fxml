@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="15.0" layoutY="30.0" prefHeight="18.0" prefWidth="32.0" text="Nom*" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="90.0" prefHeight="18.0" prefWidth="50.0" text="Pouvoir *" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="150.0" prefHeight="18.0" prefWidth="73.0" text="Point faible *" />
+      <Slider fx:id="score" blockIncrement="1.0" layoutX="140.0" layoutY="212.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Label layoutX="15.0" layoutY="210.0" prefHeight="18.0" prefWidth="118.0" text="Degrès malveillance *" />
+      <Label layoutX="15.0" layoutY="270.0" prefHeight="18.0" prefWidth="74.0" text="Commentaire" />
+      <TextField fx:id="comm" layoutX="140.0" layoutY="267.0" />
+      <TextField fx:id="ptfai" layoutX="140.0" layoutY="146.0" />
+      <TextField fx:id="pouvoir" layoutX="140.0" layoutY="86.0" />
+      <TextField fx:id="name" layoutX="140.0" layoutY="26.0" />
+      <Label layoutX="15.0" layoutY="335.0" prefHeight="18.0" prefWidth="32.0" text="Civil" />
+      <TableView fx:id="tabciv" layoutX="13.0" layoutY="364.0" prefHeight="200.0" prefWidth="324.0">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="162.0" resizable="false" text="Nom" />
+          <TableColumn fx:id="colprenom" prefWidth="162.0" text="Prénom" />
+        </columns>
+      </TableView>
+      <TextField fx:id="nom" layoutX="14.0" layoutY="573.0" prefHeight="26.0" prefWidth="117.0" promptText="Nom" AnchorPane.leftAnchor="15.0" />
+      <TextField fx:id="prenom" layoutX="140.0" layoutY="573.0" prefHeight="26.0" prefWidth="117.0" promptText="Prénom" />
+      <Button fx:id="btnfiltre" layoutX="263.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnfiltreh" text="Filtrer" />
+      <Button fx:id="btnfval" layoutX="17.0" layoutY="610.0" mnemonicParsing="false" onAction="#btnfvalh" text="Valider" AnchorPane.leftAnchor="15.0" />
+      <Button fx:id="btnann" layoutX="289.0" layoutY="610.0" mnemonicParsing="false" onAction="#btnannh" text="Annuler" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="civchoi" editable="false" layoutX="140.0" layoutY="331.0" promptText="Civil choisi" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.SuperVilainsController">
+   <children>
+      <TableView fx:id="tabsh" layoutX="14.0" layoutY="14.0" prefHeight="447.0" prefWidth="877.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="146.40001821517944" text="Nom" />
+          <TableColumn fx:id="colpouv" minWidth="0.0" prefWidth="132.80001831054688" text="Pouvoir" />
+            <TableColumn fx:id="colptfai" minWidth="0.0" prefWidth="135.20001220703125" text="Point faible" />
+            <TableColumn fx:id="coldegmal" minWidth="0.0" prefWidth="142.40005493164062" text="Degrès de malveillance" />
+            <TableColumn fx:id="colcomm" minWidth="0.0" prefWidth="159.2000732421875" text="Commentaire" />
+            <TableColumn fx:id="colciv" prefWidth="153.5999755859375" text="Civil" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnsupp" layoutX="5.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnsupph" text="Supprimer" />
+      <Button fx:id="btnann" layoutX="82.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnannh" text="Annuler" />
+      <Button fx:id="btnajt" layoutX="146.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnajth" text="Ajouter" />
+      <Button fx:id="btnraf" layoutX="207.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnrafh" text="Rafraîchir" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.SuperHerosController">
+   <children>
+      <TableView fx:id="tabsh" layoutX="14.0" layoutY="14.0" prefHeight="447.0" prefWidth="877.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="208.00002431869507" text="Nom" />
+          <TableColumn fx:id="colpouv" minWidth="0.0" prefWidth="156.79998779296875" text="Pouvoir" />
+            <TableColumn fx:id="colptfai" minWidth="0.0" prefWidth="202.40005493164062" text="Point faible" />
+            <TableColumn fx:id="colscore" minWidth="0.0" prefWidth="99.199951171875" text="Score" />
+            <TableColumn fx:id="colcomm" minWidth="0.0" prefWidth="83.1998291015625" text="Commentaire" />
+            <TableColumn fx:id="colciv" prefWidth="128.0001220703125" text="Civil" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnsupp" layoutX="5.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnsupph" text="Supprimer" />
+      <Button fx:id="btnann" layoutX="82.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnannh" text="Annuler" />
+      <Button fx:id="btnajt" layoutX="146.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnajth" text="Ajouter" />
+      <Button fx:id="btnraf" layoutX="207.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnrafh" text="Rafraîchir" />
+   </children>
+</AnchorPane>
